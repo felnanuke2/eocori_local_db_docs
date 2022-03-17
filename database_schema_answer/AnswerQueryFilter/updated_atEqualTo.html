@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the updated_atEqualTo method from the AnswerQueryFilter extension, for the Dart programming language.">
+  <title>updated_atEqualTo method - AnswerQueryFilter extension - answer library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_answer/database_schema_answer-library.html">answer</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter.html">AnswerQueryFilter</a></li>
+    <li class="self-crumb">updated_atEqualTo method</li>
+  </ol>
+  <div class="self-name">updated_atEqualTo</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">updated_atEqualTo</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_answer/Answer-class.html">Answer</a></span>, <span class="type-parameter"><a href="../../database_schema_answer/Answer-class.html">Answer</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">updated_atEqualTo</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="updated_atEqualTo-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a>?</span> <span class="parameter-name">value</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Answer, Answer, QAfterFilterCondition&gt; updated_atEqualTo(
+    DateTime? value) {
+  return addFilterConditionInternal(FilterCondition(
+    type: ConditionType.eq,
+    property: &#39;updated_at&#39;,
+    value: value,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_answer/database_schema_answer-library.html">answer</a></li>
+  <li><a href="../../database_schema_answer/AnswerQueryFilter.html">AnswerQueryFilter</a></li>
+  <li class="self-crumb">updated_atEqualTo method</li>
+</ol>
+
+
+    <h5>AnswerQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_answer/AnswerQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idBetween.html">answer_idBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idContains.html">answer_idContains</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idEndsWith.html">answer_idEndsWith</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idEqualTo.html">answer_idEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idGreaterThan.html">answer_idGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idIsNull.html">answer_idIsNull</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idLessThan.html">answer_idLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idMatches.html">answer_idMatches</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/answer_idStartsWith.html">answer_idStartsWith</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/attachmentsIdsAnyBetween.html">attachmentsIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/attachmentsIdsAnyEqualTo.html">attachmentsIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/attachmentsIdsAnyGreaterThan.html">attachmentsIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/attachmentsIdsAnyLessThan.html">attachmentsIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/created_atBetween.html">created_atBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/created_atEqualTo.html">created_atEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/created_atGreaterThan.html">created_atGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/created_atLessThan.html">created_atLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/data_typeBetween.html">data_typeBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/data_typeEqualTo.html">data_typeEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/data_typeGreaterThan.html">data_typeGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/data_typeLessThan.html">data_typeLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idBetween.html">entry_idBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idContains.html">entry_idContains</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idEndsWith.html">entry_idEndsWith</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idEqualTo.html">entry_idEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idGreaterThan.html">entry_idGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idLessThan.html">entry_idLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idMatches.html">entry_idMatches</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/entry_idStartsWith.html">entry_idStartsWith</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/idIsNull.html">idIsNull</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/sent_timeBetween.html">sent_timeBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/sent_timeEqualTo.html">sent_timeEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/sent_timeGreaterThan.html">sent_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/sent_timeIsNull.html">sent_timeIsNull</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/sent_timeLessThan.html">sent_timeLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/updated_atBetween.html">updated_atBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/updated_atEqualTo.html">updated_atEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/updated_atGreaterThan.html">updated_atGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/updated_atIsNull.html">updated_atIsNull</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/updated_atLessThan.html">updated_atLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueBetween.html">valueBetween</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueContains.html">valueContains</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueEndsWith.html">valueEndsWith</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueEqualTo.html">valueEqualTo</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueGreaterThan.html">valueGreaterThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueLessThan.html">valueLessThan</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueMatches.html">valueMatches</a></li>
+    <li><a href="../../database_schema_answer/AnswerQueryFilter/valueStartsWith.html">valueStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

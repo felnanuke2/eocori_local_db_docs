@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the statusBetween method from the FormCollectionQueryFilter extension, for the Dart programming language.">
+  <title>statusBetween method - FormCollectionQueryFilter extension - form library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_form/database_schema_form-library.html">form</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter.html">FormCollectionQueryFilter</a></li>
+    <li class="self-crumb">statusBetween method</li>
+  </ol>
+  <div class="self-name">statusBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">statusBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_form/FormCollection-class.html">FormCollection</a></span>, <span class="type-parameter"><a href="../../database_schema_form/FormCollection-class.html">FormCollection</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">statusBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="statusBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-includeLower">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;FormCollection, FormCollection, QAfterFilterCondition&gt;
+    statusBetween(
+  int lower,
+  int upper, {
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;status&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_form/database_schema_form-library.html">form</a></li>
+  <li><a href="../../database_schema_form/FormCollectionQueryFilter.html">FormCollectionQueryFilter</a></li>
+  <li class="self-crumb">statusBetween method</li>
+</ol>
+
+
+    <h5>FormCollectionQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_form/FormCollectionQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byBetween.html">created_byBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byContains.html">created_byContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byEndsWith.html">created_byEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byEqualTo.html">created_byEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byGreaterThan.html">created_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byIsNull.html">created_byIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byLessThan.html">created_byLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byMatches.html">created_byMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/created_byStartsWith.html">created_byStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyBetween.html">entriesIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyContains.html">entriesIdsAnyContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyEndsWith.html">entriesIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyEqualTo.html">entriesIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyGreaterThan.html">entriesIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyLessThan.html">entriesIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyMatches.html">entriesIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/entriesIdsAnyStartsWith.html">entriesIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyBetween.html">groupsIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyContains.html">groupsIdsAnyContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyEndsWith.html">groupsIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyEqualTo.html">groupsIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyGreaterThan.html">groupsIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyLessThan.html">groupsIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyMatches.html">groupsIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/groupsIdsAnyStartsWith.html">groupsIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/statusBetween.html">statusBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/statusEqualTo.html">statusEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/statusGreaterThan.html">statusGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/statusLessThan.html">statusLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byBetween.html">updated_byBetween</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byContains.html">updated_byContains</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byEndsWith.html">updated_byEndsWith</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byEqualTo.html">updated_byEqualTo</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byGreaterThan.html">updated_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byIsNull.html">updated_byIsNull</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byLessThan.html">updated_byLessThan</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byMatches.html">updated_byMatches</a></li>
+    <li><a href="../../database_schema_form/FormCollectionQueryFilter/updated_byStartsWith.html">updated_byStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

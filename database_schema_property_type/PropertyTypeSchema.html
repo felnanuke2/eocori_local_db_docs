@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the PropertyTypeSchema property from the property_type library, for the Dart programming language.">
+  <title>PropertyTypeSchema property - property_type library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_property_type/database_schema_property_type-library.html">property_type</a></li>
+    <li class="self-crumb">PropertyTypeSchema property</li>
+  </ol>
+  <div class="self-name">PropertyTypeSchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">PropertyTypeSchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_property_type/PropertyType-class.html">PropertyType</a></span>&gt;</span>
+          <span class="name ">PropertyTypeSchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final PropertyTypeSchema = CollectionSchema(
+  name: &#39;PropertyType&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;PropertyType&quot;,&quot;idName&quot;:&quot;idAutoIncrement&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;creation_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;description&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;position&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;propertiesIds&quot;,&quot;type&quot;:&quot;StringList&quot;},{&quot;name&quot;:&quot;update_time&quot;,&quot;type&quot;:&quot;Long&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _PropertyTypeNativeAdapter(),
+  webAdapter: const _PropertyTypeWebAdapter(),
+  idName: &#39;idAutoIncrement&#39;,
+  propertyIds: {
+    &#39;creation_time&#39;: 0,
+    &#39;description&#39;: 1,
+    &#39;id&#39;: 2,
+    &#39;name&#39;: 3,
+    &#39;position&#39;: 4,
+    &#39;propertiesIds&#39;: 5,
+    &#39;update_time&#39;: 6
+  },
+  listProperties: {&#39;propertiesIds&#39;},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.idAutoIncrement == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.idAutoIncrement;
+    }
+  },
+  setId: (obj, id) =&gt; obj.idAutoIncrement = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_property_type/database_schema_property_type-library.html">property_type</a></li>
+  <li class="self-crumb">PropertyTypeSchema property</li>
+</ol>
+
+
+    <h5>property_type library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_property_type/database_schema_property_type-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_property_type/PropertyType-class.html">PropertyType</a></li>
+
+  <li class="section-title"><a href="../database_schema_property_type/database_schema_property_type-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_property_type/GetPropertyTypeCollection.html">GetPropertyTypeCollection</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryFilter.html">PropertyTypeQueryFilter</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryLinks.html">PropertyTypeQueryLinks</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryProperty.html">PropertyTypeQueryProperty</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryWhere.html">PropertyTypeQueryWhere</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryWhereDistinct.html">PropertyTypeQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryWhereSort.html">PropertyTypeQueryWhereSort</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryWhereSortBy.html">PropertyTypeQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeQueryWhereSortThenBy.html">PropertyTypeQueryWhereSortThenBy</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_property_type/database_schema_property_type-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_property_type/PropertyTypeSchema.html">PropertyTypeSchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

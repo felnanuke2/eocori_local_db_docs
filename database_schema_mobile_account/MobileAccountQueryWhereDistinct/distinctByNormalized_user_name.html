@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the distinctByNormalized_user_name method from the MobileAccountQueryWhereDistinct extension, for the Dart programming language.">
+  <title>distinctByNormalized_user_name method - MobileAccountQueryWhereDistinct extension - mobile_account library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_mobile_account/database_schema_mobile_account-library.html">mobile_account</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct.html">MobileAccountQueryWhereDistinct</a></li>
+    <li class="self-crumb">distinctByNormalized_user_name method</li>
+  </ol>
+  <div class="self-name">distinctByNormalized_user_name</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">distinctByNormalized_user_name</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></span>, <span class="type-parameter"><a href="../../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></span>, <span class="type-parameter">QDistinct</span>&gt;</span></span>
+<span class="name ">distinctByNormalized_user_name</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="distinctByNormalized_user_name-param-caseSensitive">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">caseSensitive</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;MobileAccount, MobileAccount, QDistinct&gt;
+    distinctByNormalized_user_name({bool caseSensitive = true}) {
+  return addDistinctByInternal(&#39;normalized_user_name&#39;,
+      caseSensitive: caseSensitive);
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_mobile_account/database_schema_mobile_account-library.html">mobile_account</a></li>
+  <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct.html">MobileAccountQueryWhereDistinct</a></li>
+  <li class="self-crumb">distinctByNormalized_user_name method</li>
+</ol>
+
+
+    <h5>MobileAccountQueryWhereDistinct extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByAccepted_terms.html">distinctByAccepted_terms</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByAccess_failed_count.html">distinctByAccess_failed_count</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByCompany_id.html">distinctByCompany_id</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByCompany_name.html">distinctByCompany_name</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByCreation_time.html">distinctByCreation_time</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByDisplay_name.html">distinctByDisplay_name</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByEmail.html">distinctByEmail</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByEmail_confirmed.html">distinctByEmail_confirmed</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctById.html">distinctById</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByIdAutoIncrement.html">distinctByIdAutoIncrement</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByJob_role.html">distinctByJob_role</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByKey.html">distinctByKey</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByLast_access_time.html">distinctByLast_access_time</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByLegal_id.html">distinctByLegal_id</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByLockout_enabled.html">distinctByLockout_enabled</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByLockout_end.html">distinctByLockout_end</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByNormalized_email.html">distinctByNormalized_email</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByNormalized_user_name.html">distinctByNormalized_user_name</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByPassword_hash.html">distinctByPassword_hash</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByPhone_number.html">distinctByPhone_number</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByPhone_number_confirmed.html">distinctByPhone_number_confirmed</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctBySecurity_stamp.html">distinctBySecurity_stamp</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByStatus.html">distinctByStatus</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByStatus_changed_by_id.html">distinctByStatus_changed_by_id</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByStatus_changed_reason.html">distinctByStatus_changed_reason</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByTwo_factor_enabled.html">distinctByTwo_factor_enabled</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByUpdate_time.html">distinctByUpdate_time</a></li>
+    <li><a href="../../database_schema_mobile_account/MobileAccountQueryWhereDistinct/distinctByUser_name.html">distinctByUser_name</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

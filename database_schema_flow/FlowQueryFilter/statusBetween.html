@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the statusBetween method from the FlowQueryFilter extension, for the Dart programming language.">
+  <title>statusBetween method - FlowQueryFilter extension - flow library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_flow/database_schema_flow-library.html">flow</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter.html">FlowQueryFilter</a></li>
+    <li class="self-crumb">statusBetween method</li>
+  </ol>
+  <div class="self-name">statusBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">statusBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_flow/Flow-class.html">Flow</a></span>, <span class="type-parameter"><a href="../../database_schema_flow/Flow-class.html">Flow</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">statusBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="statusBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-includeLower">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="statusBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Flow, Flow, QAfterFilterCondition&gt; statusBetween(
+  int? lower,
+  int? upper, {
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;status&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_flow/database_schema_flow-library.html">flow</a></li>
+  <li><a href="../../database_schema_flow/FlowQueryFilter.html">FlowQueryFilter</a></li>
+  <li class="self-crumb">statusBetween method</li>
+</ol>
+
+
+    <h5>FlowQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_flow/FlowQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/creation_timeIsNull.html">creation_timeIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyBetween.html">formsIDsAnyBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyContains.html">formsIDsAnyContains</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyEndsWith.html">formsIDsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyEqualTo.html">formsIDsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyGreaterThan.html">formsIDsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyLessThan.html">formsIDsAnyLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyMatches.html">formsIDsAnyMatches</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/formsIDsAnyStartsWith.html">formsIDsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idIsNull.html">idIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyBetween.html">propertiesIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyContains.html">propertiesIdsAnyContains</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyEndsWith.html">propertiesIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyEqualTo.html">propertiesIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyGreaterThan.html">propertiesIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyLessThan.html">propertiesIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyMatches.html">propertiesIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/propertiesIdsAnyStartsWith.html">propertiesIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/statusBetween.html">statusBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/statusEqualTo.html">statusEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/statusGreaterThan.html">statusGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/statusIsNull.html">statusIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/statusLessThan.html">statusLessThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_flow/FlowQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

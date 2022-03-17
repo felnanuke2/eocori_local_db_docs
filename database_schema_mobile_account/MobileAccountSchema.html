@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the MobileAccountSchema property from the mobile_account library, for the Dart programming language.">
+  <title>MobileAccountSchema property - mobile_account library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_mobile_account/database_schema_mobile_account-library.html">mobile_account</a></li>
+    <li class="self-crumb">MobileAccountSchema property</li>
+  </ol>
+  <div class="self-name">MobileAccountSchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">MobileAccountSchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></span>&gt;</span>
+          <span class="name ">MobileAccountSchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final MobileAccountSchema = CollectionSchema(
+  name: &#39;MobileAccount&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;MobileAccount&quot;,&quot;idName&quot;:&quot;idAutoIncrement&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;accepted_terms&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;access_failed_count&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;company_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;company_name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;creation_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;display_name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;email_confirmed&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;job_role&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;key&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;last_access_time&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;legal_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;lockout_enabled&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;lockout_end&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;normalized_email&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;normalized_user_name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;password_hash&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;phone_number&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;phone_number_confirmed&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;security_stamp&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;status_changed_by_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;status_changed_reason&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;two_factor_enabled&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;update_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _MobileAccountNativeAdapter(),
+  webAdapter: const _MobileAccountWebAdapter(),
+  idName: &#39;idAutoIncrement&#39;,
+  propertyIds: {
+    &#39;accepted_terms&#39;: 0,
+    &#39;access_failed_count&#39;: 1,
+    &#39;company_id&#39;: 2,
+    &#39;company_name&#39;: 3,
+    &#39;creation_time&#39;: 4,
+    &#39;display_name&#39;: 5,
+    &#39;email&#39;: 6,
+    &#39;email_confirmed&#39;: 7,
+    &#39;id&#39;: 8,
+    &#39;job_role&#39;: 9,
+    &#39;key&#39;: 10,
+    &#39;last_access_time&#39;: 11,
+    &#39;legal_id&#39;: 12,
+    &#39;lockout_enabled&#39;: 13,
+    &#39;lockout_end&#39;: 14,
+    &#39;normalized_email&#39;: 15,
+    &#39;normalized_user_name&#39;: 16,
+    &#39;password_hash&#39;: 17,
+    &#39;phone_number&#39;: 18,
+    &#39;phone_number_confirmed&#39;: 19,
+    &#39;security_stamp&#39;: 20,
+    &#39;status&#39;: 21,
+    &#39;status_changed_by_id&#39;: 22,
+    &#39;status_changed_reason&#39;: 23,
+    &#39;two_factor_enabled&#39;: 24,
+    &#39;update_time&#39;: 25,
+    &#39;user_name&#39;: 26
+  },
+  listProperties: {},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.idAutoIncrement == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.idAutoIncrement;
+    }
+  },
+  setId: (obj, id) =&gt; obj.idAutoIncrement = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_mobile_account/database_schema_mobile_account-library.html">mobile_account</a></li>
+  <li class="self-crumb">MobileAccountSchema property</li>
+</ol>
+
+
+    <h5>mobile_account library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_mobile_account/database_schema_mobile_account-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></li>
+
+  <li class="section-title"><a href="../database_schema_mobile_account/database_schema_mobile_account-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_mobile_account/GetMobileAccountCollection.html">GetMobileAccountCollection</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryFilter.html">MobileAccountQueryFilter</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryLinks.html">MobileAccountQueryLinks</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryProperty.html">MobileAccountQueryProperty</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryWhere.html">MobileAccountQueryWhere</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryWhereDistinct.html">MobileAccountQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryWhereSort.html">MobileAccountQueryWhereSort</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryWhereSortBy.html">MobileAccountQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountQueryWhereSortThenBy.html">MobileAccountQueryWhereSortThenBy</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_mobile_account/database_schema_mobile_account-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_mobile_account/MobileAccountSchema.html">MobileAccountSchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

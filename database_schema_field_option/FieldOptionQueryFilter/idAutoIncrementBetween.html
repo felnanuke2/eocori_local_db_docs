@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the idAutoIncrementBetween method from the FieldOptionQueryFilter extension, for the Dart programming language.">
+  <title>idAutoIncrementBetween method - FieldOptionQueryFilter extension - field_option library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_field_option/database_schema_field_option-library.html">field_option</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter.html">FieldOptionQueryFilter</a></li>
+    <li class="self-crumb">idAutoIncrementBetween method</li>
+  </ol>
+  <div class="self-name">idAutoIncrementBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">idAutoIncrementBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_field_option/FieldOption-class.html">FieldOption</a></span>, <span class="type-parameter"><a href="../../database_schema_field_option/FieldOption-class.html">FieldOption</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">idAutoIncrementBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="idAutoIncrementBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="idAutoIncrementBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="idAutoIncrementBetween-param-includeLower">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="idAutoIncrementBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;FieldOption, FieldOption, QAfterFilterCondition&gt;
+    idAutoIncrementBetween(
+  int? lower,
+  int? upper, {
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;idAutoIncrement&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_field_option/database_schema_field_option-library.html">field_option</a></li>
+  <li><a href="../../database_schema_field_option/FieldOptionQueryFilter.html">FieldOptionQueryFilter</a></li>
+  <li class="self-crumb">idAutoIncrementBetween method</li>
+</ol>
+
+
+    <h5>FieldOptionQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_field_option/FieldOptionQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idBetween.html">field_idBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idContains.html">field_idContains</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idEndsWith.html">field_idEndsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idEqualTo.html">field_idEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idGreaterThan.html">field_idGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idLessThan.html">field_idLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idMatches.html">field_idMatches</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/field_idStartsWith.html">field_idStartsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/hashCodeBetween.html">hashCodeBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/hashCodeEqualTo.html">hashCodeEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/hashCodeGreaterThan.html">hashCodeGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/hashCodeLessThan.html">hashCodeLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/orderBetween.html">orderBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/orderEqualTo.html">orderEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/orderGreaterThan.html">orderGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/orderLessThan.html">orderLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/stringifyEqualTo.html">stringifyEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/stringifyIsNull.html">stringifyIsNull</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueBetween.html">valueBetween</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueContains.html">valueContains</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueEndsWith.html">valueEndsWith</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueEqualTo.html">valueEqualTo</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueGreaterThan.html">valueGreaterThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueIsNull.html">valueIsNull</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueLessThan.html">valueLessThan</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueMatches.html">valueMatches</a></li>
+    <li><a href="../../database_schema_field_option/FieldOptionQueryFilter/valueStartsWith.html">valueStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

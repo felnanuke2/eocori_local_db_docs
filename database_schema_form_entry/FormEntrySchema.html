@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the FormEntrySchema property from the form_entry library, for the Dart programming language.">
+  <title>FormEntrySchema property - form_entry library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_form_entry/database_schema_form_entry-library.html">form_entry</a></li>
+    <li class="self-crumb">FormEntrySchema property</li>
+  </ol>
+  <div class="self-name">FormEntrySchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">FormEntrySchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form_entry/FormEntry-class.html">FormEntry</a></span>&gt;</span>
+          <span class="name ">FormEntrySchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final FormEntrySchema = CollectionSchema(
+  name: &#39;FormEntry&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;FormEntry&quot;,&quot;idName&quot;:&quot;idAutoIncrement&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;attachment_mode&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;created_by&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;creation_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;description&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;field_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;hashCode&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;linksIds&quot;,&quot;type&quot;:&quot;StringList&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;statement&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;stringify&quot;,&quot;type&quot;:&quot;Bool&quot;},{&quot;name&quot;:&quot;update_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;updated_by&quot;,&quot;type&quot;:&quot;String&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _FormEntryNativeAdapter(),
+  webAdapter: const _FormEntryWebAdapter(),
+  idName: &#39;idAutoIncrement&#39;,
+  propertyIds: {
+    &#39;attachment_mode&#39;: 0,
+    &#39;created_by&#39;: 1,
+    &#39;creation_time&#39;: 2,
+    &#39;description&#39;: 3,
+    &#39;field_id&#39;: 4,
+    &#39;hashCode&#39;: 5,
+    &#39;id&#39;: 6,
+    &#39;linksIds&#39;: 7,
+    &#39;name&#39;: 8,
+    &#39;statement&#39;: 9,
+    &#39;status&#39;: 10,
+    &#39;stringify&#39;: 11,
+    &#39;update_time&#39;: 12,
+    &#39;updated_by&#39;: 13
+  },
+  listProperties: {&#39;linksIds&#39;},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.idAutoIncrement == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.idAutoIncrement;
+    }
+  },
+  setId: (obj, id) =&gt; obj.idAutoIncrement = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_form_entry/database_schema_form_entry-library.html">form_entry</a></li>
+  <li class="self-crumb">FormEntrySchema property</li>
+</ol>
+
+
+    <h5>form_entry library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_form_entry/database_schema_form_entry-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_form_entry/FormEntry-class.html">FormEntry</a></li>
+
+  <li class="section-title"><a href="../database_schema_form_entry/database_schema_form_entry-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryFilter.html">FormEntryQueryFilter</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryLinks.html">FormEntryQueryLinks</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryProperty.html">FormEntryQueryProperty</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryWhere.html">FormEntryQueryWhere</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryWhereDistinct.html">FormEntryQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryWhereSort.html">FormEntryQueryWhereSort</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryWhereSortBy.html">FormEntryQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_form_entry/FormEntryQueryWhereSortThenBy.html">FormEntryQueryWhereSortThenBy</a></li>
+  <li><a href="../database_schema_form_entry/GetFormEntryCollection.html">GetFormEntryCollection</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_form_entry/database_schema_form_entry-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_form_entry/FormEntrySchema.html">FormEntrySchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

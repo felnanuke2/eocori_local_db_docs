@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the created_byIsNull method from the FormEntryQueryFilter extension, for the Dart programming language.">
+  <title>created_byIsNull method - FormEntryQueryFilter extension - form_entry library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_form_entry/database_schema_form_entry-library.html">form_entry</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter.html">FormEntryQueryFilter</a></li>
+    <li class="self-crumb">created_byIsNull method</li>
+  </ol>
+  <div class="self-name">created_byIsNull</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">created_byIsNull</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_form_entry/FormEntry-class.html">FormEntry</a></span>, <span class="type-parameter"><a href="../../database_schema_form_entry/FormEntry-class.html">FormEntry</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">created_byIsNull</span>(<wbr>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;FormEntry, FormEntry, QAfterFilterCondition&gt; created_byIsNull() {
+  return addFilterConditionInternal(FilterCondition(
+    type: ConditionType.isNull,
+    property: &#39;created_by&#39;,
+    value: null,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_form_entry/database_schema_form_entry-library.html">form_entry</a></li>
+  <li><a href="../../database_schema_form_entry/FormEntryQueryFilter.html">FormEntryQueryFilter</a></li>
+  <li class="self-crumb">created_byIsNull method</li>
+</ol>
+
+
+    <h5>FormEntryQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_form_entry/FormEntryQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/attachment_modeBetween.html">attachment_modeBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/attachment_modeEqualTo.html">attachment_modeEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/attachment_modeGreaterThan.html">attachment_modeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/attachment_modeLessThan.html">attachment_modeLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byBetween.html">created_byBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byContains.html">created_byContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byEndsWith.html">created_byEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byEqualTo.html">created_byEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byGreaterThan.html">created_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byIsNull.html">created_byIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byLessThan.html">created_byLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byMatches.html">created_byMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/created_byStartsWith.html">created_byStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idBetween.html">field_idBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idContains.html">field_idContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idEndsWith.html">field_idEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idEqualTo.html">field_idEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idGreaterThan.html">field_idGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idLessThan.html">field_idLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idMatches.html">field_idMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/field_idStartsWith.html">field_idStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/hashCodeBetween.html">hashCodeBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/hashCodeEqualTo.html">hashCodeEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/hashCodeGreaterThan.html">hashCodeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/hashCodeLessThan.html">hashCodeLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyBetween.html">linksIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyContains.html">linksIdsAnyContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyEndsWith.html">linksIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyEqualTo.html">linksIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyGreaterThan.html">linksIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyLessThan.html">linksIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyMatches.html">linksIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/linksIdsAnyStartsWith.html">linksIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementBetween.html">statementBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementContains.html">statementContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementEndsWith.html">statementEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementEqualTo.html">statementEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementGreaterThan.html">statementGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementIsNull.html">statementIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementLessThan.html">statementLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementMatches.html">statementMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statementStartsWith.html">statementStartsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statusBetween.html">statusBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statusEqualTo.html">statusEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statusGreaterThan.html">statusGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/statusLessThan.html">statusLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/stringifyEqualTo.html">stringifyEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/stringifyIsNull.html">stringifyIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byBetween.html">updated_byBetween</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byContains.html">updated_byContains</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byEndsWith.html">updated_byEndsWith</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byEqualTo.html">updated_byEqualTo</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byGreaterThan.html">updated_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byIsNull.html">updated_byIsNull</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byLessThan.html">updated_byLessThan</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byMatches.html">updated_byMatches</a></li>
+    <li><a href="../../database_schema_form_entry/FormEntryQueryFilter/updated_byStartsWith.html">updated_byStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

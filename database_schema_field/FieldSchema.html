@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the FieldSchema property from the field library, for the Dart programming language.">
+  <title>FieldSchema property - field library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_field/database_schema_field-library.html">field</a></li>
+    <li class="self-crumb">FieldSchema property</li>
+  </ol>
+  <div class="self-name">FieldSchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">FieldSchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_field/Field-class.html">Field</a></span>&gt;</span>
+          <span class="name ">FieldSchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final FieldSchema = CollectionSchema(
+  name: &#39;Field&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;Field&quot;,&quot;idName&quot;:&quot;idAutoIncrement&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;created_by&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;creation_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;data_type&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;description&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;optionsIds&quot;,&quot;type&quot;:&quot;StringList&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;update_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;updated_by&quot;,&quot;type&quot;:&quot;String&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _FieldNativeAdapter(),
+  webAdapter: const _FieldWebAdapter(),
+  idName: &#39;idAutoIncrement&#39;,
+  propertyIds: {
+    &#39;created_by&#39;: 0,
+    &#39;creation_time&#39;: 1,
+    &#39;data_type&#39;: 2,
+    &#39;description&#39;: 3,
+    &#39;id&#39;: 4,
+    &#39;name&#39;: 5,
+    &#39;optionsIds&#39;: 6,
+    &#39;status&#39;: 7,
+    &#39;update_time&#39;: 8,
+    &#39;updated_by&#39;: 9
+  },
+  listProperties: {&#39;optionsIds&#39;},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.idAutoIncrement == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.idAutoIncrement;
+    }
+  },
+  setId: (obj, id) =&gt; obj.idAutoIncrement = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_field/database_schema_field-library.html">field</a></li>
+  <li class="self-crumb">FieldSchema property</li>
+</ol>
+
+
+    <h5>field library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_field/database_schema_field-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_field/Field-class.html">Field</a></li>
+
+  <li class="section-title"><a href="../database_schema_field/database_schema_field-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_field/FieldQueryFilter.html">FieldQueryFilter</a></li>
+  <li><a href="../database_schema_field/FieldQueryLinks.html">FieldQueryLinks</a></li>
+  <li><a href="../database_schema_field/FieldQueryProperty.html">FieldQueryProperty</a></li>
+  <li><a href="../database_schema_field/FieldQueryWhere.html">FieldQueryWhere</a></li>
+  <li><a href="../database_schema_field/FieldQueryWhereDistinct.html">FieldQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_field/FieldQueryWhereSort.html">FieldQueryWhereSort</a></li>
+  <li><a href="../database_schema_field/FieldQueryWhereSortBy.html">FieldQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_field/FieldQueryWhereSortThenBy.html">FieldQueryWhereSortThenBy</a></li>
+  <li><a href="../database_schema_field/GetFieldCollection.html">GetFieldCollection</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_field/database_schema_field-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_field/FieldSchema.html">FieldSchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the CommissioningSchema property from the commissioning library, for the Dart programming language.">
+  <title>CommissioningSchema property - commissioning library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_commissioning/database_schema_commissioning-library.html">commissioning</a></li>
+    <li class="self-crumb">CommissioningSchema property</li>
+  </ol>
+  <div class="self-name">CommissioningSchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">CommissioningSchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_commissioning/Commissioning-class.html">Commissioning</a></span>&gt;</span>
+          <span class="name ">CommissioningSchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final CommissioningSchema = CollectionSchema(
+  name: &#39;Commissioning&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;Commissioning&quot;,&quot;idName&quot;:&quot;id&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;answersIds&quot;,&quot;type&quot;:&quot;LongList&quot;},{&quot;name&quot;:&quot;commissioning_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;created_at&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;created_by_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;created_by_name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;customerIdAutoIncrement&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;customer_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;flowId&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;project_name&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;propertiesIds&quot;,&quot;type&quot;:&quot;StringList&quot;},{&quot;name&quot;:&quot;send_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;updated_at&quot;,&quot;type&quot;:&quot;Long&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _CommissioningNativeAdapter(),
+  webAdapter: const _CommissioningWebAdapter(),
+  idName: &#39;id&#39;,
+  propertyIds: {
+    &#39;answersIds&#39;: 0,
+    &#39;commissioning_id&#39;: 1,
+    &#39;created_at&#39;: 2,
+    &#39;created_by_id&#39;: 3,
+    &#39;created_by_name&#39;: 4,
+    &#39;customerIdAutoIncrement&#39;: 5,
+    &#39;customer_id&#39;: 6,
+    &#39;flowId&#39;: 7,
+    &#39;project_name&#39;: 8,
+    &#39;propertiesIds&#39;: 9,
+    &#39;send_time&#39;: 10,
+    &#39;updated_at&#39;: 11
+  },
+  listProperties: {&#39;answersIds&#39;, &#39;propertiesIds&#39;},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.id == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.id;
+    }
+  },
+  setId: (obj, id) =&gt; obj.id = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_commissioning/database_schema_commissioning-library.html">commissioning</a></li>
+  <li class="self-crumb">CommissioningSchema property</li>
+</ol>
+
+
+    <h5>commissioning library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_commissioning/database_schema_commissioning-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_commissioning/Commissioning-class.html">Commissioning</a></li>
+
+  <li class="section-title"><a href="../database_schema_commissioning/database_schema_commissioning-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryFilter.html">CommissioningQueryFilter</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryLinks.html">CommissioningQueryLinks</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryProperty.html">CommissioningQueryProperty</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryWhere.html">CommissioningQueryWhere</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryWhereDistinct.html">CommissioningQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryWhereSort.html">CommissioningQueryWhereSort</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryWhereSortBy.html">CommissioningQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningQueryWhereSortThenBy.html">CommissioningQueryWhereSortThenBy</a></li>
+  <li><a href="../database_schema_commissioning/GetCommissioningCollection.html">GetCommissioningCollection</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_commissioning/database_schema_commissioning-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_commissioning/CommissioningSchema.html">CommissioningSchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

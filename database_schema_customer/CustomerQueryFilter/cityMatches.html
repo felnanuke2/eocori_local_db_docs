@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the cityMatches method from the CustomerQueryFilter extension, for the Dart programming language.">
+  <title>cityMatches method - CustomerQueryFilter extension - customer library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_customer/database_schema_customer-library.html">customer</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter.html">CustomerQueryFilter</a></li>
+    <li class="self-crumb">cityMatches method</li>
+  </ol>
+  <div class="self-name">cityMatches</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">cityMatches</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_customer/Customer-class.html">Customer</a></span>, <span class="type-parameter"><a href="../../database_schema_customer/Customer-class.html">Customer</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">cityMatches</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="cityMatches-param-pattern"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">pattern</span>, </span></li>
+<li><span class="parameter" id="cityMatches-param-caseSensitive">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">caseSensitive</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Customer, Customer, QAfterFilterCondition&gt; cityMatches(
+    String pattern,
+    {bool caseSensitive = true}) {
+  return addFilterConditionInternal(FilterCondition(
+    type: ConditionType.matches,
+    property: &#39;city&#39;,
+    value: pattern,
+    caseSensitive: caseSensitive,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_customer/database_schema_customer-library.html">customer</a></li>
+  <li><a href="../../database_schema_customer/CustomerQueryFilter.html">CustomerQueryFilter</a></li>
+  <li class="self-crumb">cityMatches method</li>
+</ol>
+
+
+    <h5>CustomerQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_customer/CustomerQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressBetween.html">addressBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressContains.html">addressContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressEndsWith.html">addressEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressEqualTo.html">addressEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressGreaterThan.html">addressGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressLessThan.html">addressLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressMatches.html">addressMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/addressStartsWith.html">addressStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityBetween.html">cityBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityContains.html">cityContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityEndsWith.html">cityEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityEqualTo.html">cityEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityGreaterThan.html">cityGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityLessThan.html">cityLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityMatches.html">cityMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/cityStartsWith.html">cityStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idBetween.html">created_by_idBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idContains.html">created_by_idContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idEndsWith.html">created_by_idEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idEqualTo.html">created_by_idEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idGreaterThan.html">created_by_idGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idLessThan.html">created_by_idLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idMatches.html">created_by_idMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/created_by_idStartsWith.html">created_by_idStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/creation_timeIsNull.html">creation_timeIsNull</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idIsNull.html">idIsNull</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberBetween.html">legal_id_numberBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberContains.html">legal_id_numberContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberEndsWith.html">legal_id_numberEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberEqualTo.html">legal_id_numberEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberGreaterThan.html">legal_id_numberGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberLessThan.html">legal_id_numberLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberMatches.html">legal_id_numberMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legal_id_numberStartsWith.html">legal_id_numberStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legalIdTypeIntBetween.html">legalIdTypeIntBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legalIdTypeIntEqualTo.html">legalIdTypeIntEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legalIdTypeIntGreaterThan.html">legalIdTypeIntGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/legalIdTypeIntLessThan.html">legalIdTypeIntLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateBetween.html">stateBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateContains.html">stateContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateEndsWith.html">stateEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateEqualTo.html">stateEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateGreaterThan.html">stateGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateLessThan.html">stateLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateMatches.html">stateMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/stateStartsWith.html">stateStartsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeBetween.html">zip_codeBetween</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeContains.html">zip_codeContains</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeEndsWith.html">zip_codeEndsWith</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeEqualTo.html">zip_codeEqualTo</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeGreaterThan.html">zip_codeGreaterThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeLessThan.html">zip_codeLessThan</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeMatches.html">zip_codeMatches</a></li>
+    <li><a href="../../database_schema_customer/CustomerQueryFilter/zip_codeStartsWith.html">zip_codeStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

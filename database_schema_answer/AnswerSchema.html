@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AnswerSchema property from the answer library, for the Dart programming language.">
+  <title>AnswerSchema property - answer library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_schema_answer/database_schema_answer-library.html">answer</a></li>
+    <li class="self-crumb">AnswerSchema property</li>
+  </ol>
+  <div class="self-name">AnswerSchema</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">AnswerSchema</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          CollectionSchema<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_answer/Answer-class.html">Answer</a></span>&gt;</span>
+          <span class="name ">AnswerSchema</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final AnswerSchema = CollectionSchema(
+  name: &#39;Answer&#39;,
+  schema:
+      &#39;{&quot;name&quot;:&quot;Answer&quot;,&quot;idName&quot;:&quot;id&quot;,&quot;properties&quot;:[{&quot;name&quot;:&quot;answer_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;attachmentsIds&quot;,&quot;type&quot;:&quot;LongList&quot;},{&quot;name&quot;:&quot;created_at&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;data_type&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;entry_id&quot;,&quot;type&quot;:&quot;String&quot;},{&quot;name&quot;:&quot;sent_time&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;updated_at&quot;,&quot;type&quot;:&quot;Long&quot;},{&quot;name&quot;:&quot;value&quot;,&quot;type&quot;:&quot;String&quot;}],&quot;indexes&quot;:[],&quot;links&quot;:[]}&#39;,
+  nativeAdapter: const _AnswerNativeAdapter(),
+  webAdapter: const _AnswerWebAdapter(),
+  idName: &#39;id&#39;,
+  propertyIds: {
+    &#39;answer_id&#39;: 0,
+    &#39;attachmentsIds&#39;: 1,
+    &#39;created_at&#39;: 2,
+    &#39;data_type&#39;: 3,
+    &#39;entry_id&#39;: 4,
+    &#39;sent_time&#39;: 5,
+    &#39;updated_at&#39;: 6,
+    &#39;value&#39;: 7
+  },
+  listProperties: {&#39;attachmentsIds&#39;},
+  indexIds: {},
+  indexTypes: {},
+  linkIds: {},
+  backlinkIds: {},
+  linkedCollections: [],
+  getId: (obj) {
+    if (obj.id == Isar.autoIncrement) {
+      return null;
+    } else {
+      return obj.id;
+    }
+  },
+  setId: (obj, id) =&gt; obj.id = id,
+  getLinks: (obj) =&gt; [],
+  version: 2,
+);</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_schema_answer/database_schema_answer-library.html">answer</a></li>
+  <li class="self-crumb">AnswerSchema property</li>
+</ol>
+
+
+    <h5>answer library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_schema_answer/database_schema_answer-library.html#classes">Classes</a></li>
+  <li><a href="../database_schema_answer/Answer-class.html">Answer</a></li>
+
+  <li class="section-title"><a href="../database_schema_answer/database_schema_answer-library.html#extensions">Extensions</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryFilter.html">AnswerQueryFilter</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryLinks.html">AnswerQueryLinks</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryProperty.html">AnswerQueryProperty</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryWhere.html">AnswerQueryWhere</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryWhereDistinct.html">AnswerQueryWhereDistinct</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryWhereSort.html">AnswerQueryWhereSort</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryWhereSortBy.html">AnswerQueryWhereSortBy</a></li>
+  <li><a href="../database_schema_answer/AnswerQueryWhereSortThenBy.html">AnswerQueryWhereSortThenBy</a></li>
+  <li><a href="../database_schema_answer/GetAnswerCollection.html">GetAnswerCollection</a></li>
+
+
+
+  <li class="section-title"><a href="../database_schema_answer/database_schema_answer-library.html#properties">Properties</a></li>
+  <li><a href="../database_schema_answer/AnswerSchema.html">AnswerSchema</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

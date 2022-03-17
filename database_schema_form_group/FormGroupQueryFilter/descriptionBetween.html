@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the descriptionBetween method from the FormGroupQueryFilter extension, for the Dart programming language.">
+  <title>descriptionBetween method - FormGroupQueryFilter extension - form_group library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_form_group/database_schema_form_group-library.html">form_group</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter.html">FormGroupQueryFilter</a></li>
+    <li class="self-crumb">descriptionBetween method</li>
+  </ol>
+  <div class="self-name">descriptionBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">descriptionBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_form_group/FormGroup-class.html">FormGroup</a></span>, <span class="type-parameter"><a href="../../database_schema_form_group/FormGroup-class.html">FormGroup</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">descriptionBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="descriptionBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="descriptionBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="descriptionBetween-param-caseSensitive">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">caseSensitive</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="descriptionBetween-param-includeLower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="descriptionBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;FormGroup, FormGroup, QAfterFilterCondition&gt; descriptionBetween(
+  String? lower,
+  String? upper, {
+  bool caseSensitive = true,
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;description&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+    caseSensitive: caseSensitive,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_form_group/database_schema_form_group-library.html">form_group</a></li>
+  <li><a href="../../database_schema_form_group/FormGroupQueryFilter.html">FormGroupQueryFilter</a></li>
+  <li class="self-crumb">descriptionBetween method</li>
+</ol>
+
+
+    <h5>FormGroupQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_form_group/FormGroupQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byBetween.html">created_byBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byContains.html">created_byContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byEndsWith.html">created_byEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byEqualTo.html">created_byEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byGreaterThan.html">created_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byIsNull.html">created_byIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byLessThan.html">created_byLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byMatches.html">created_byMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/created_byStartsWith.html">created_byStartsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyBetween.html">entriesIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyContains.html">entriesIdsAnyContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyEndsWith.html">entriesIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyEqualTo.html">entriesIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyGreaterThan.html">entriesIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyLessThan.html">entriesIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyMatches.html">entriesIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/entriesIdsAnyStartsWith.html">entriesIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/statusBetween.html">statusBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/statusEqualTo.html">statusEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/statusGreaterThan.html">statusGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/statusLessThan.html">statusLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byBetween.html">updated_byBetween</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byContains.html">updated_byContains</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byEndsWith.html">updated_byEndsWith</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byEqualTo.html">updated_byEqualTo</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byGreaterThan.html">updated_byGreaterThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byIsNull.html">updated_byIsNull</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byLessThan.html">updated_byLessThan</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byMatches.html">updated_byMatches</a></li>
+    <li><a href="../../database_schema_form_group/FormGroupQueryFilter/updated_byStartsWith.html">updated_byStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the commissioning_idBetween method from the CommissioningQueryFilter extension, for the Dart programming language.">
+  <title>commissioning_idBetween method - CommissioningQueryFilter extension - commissioning library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_commissioning/database_schema_commissioning-library.html">commissioning</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter.html">CommissioningQueryFilter</a></li>
+    <li class="self-crumb">commissioning_idBetween method</li>
+  </ol>
+  <div class="self-name">commissioning_idBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">commissioning_idBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_commissioning/Commissioning-class.html">Commissioning</a></span>, <span class="type-parameter"><a href="../../database_schema_commissioning/Commissioning-class.html">Commissioning</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">commissioning_idBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="commissioning_idBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="commissioning_idBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="commissioning_idBetween-param-caseSensitive">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">caseSensitive</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="commissioning_idBetween-param-includeLower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="commissioning_idBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Commissioning, Commissioning, QAfterFilterCondition&gt;
+    commissioning_idBetween(
+  String? lower,
+  String? upper, {
+  bool caseSensitive = true,
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;commissioning_id&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+    caseSensitive: caseSensitive,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_commissioning/database_schema_commissioning-library.html">commissioning</a></li>
+  <li><a href="../../database_schema_commissioning/CommissioningQueryFilter.html">CommissioningQueryFilter</a></li>
+  <li class="self-crumb">commissioning_idBetween method</li>
+</ol>
+
+
+    <h5>CommissioningQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_commissioning/CommissioningQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/answersIdsAnyBetween.html">answersIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/answersIdsAnyEqualTo.html">answersIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/answersIdsAnyGreaterThan.html">answersIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/answersIdsAnyLessThan.html">answersIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idBetween.html">commissioning_idBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idContains.html">commissioning_idContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idEndsWith.html">commissioning_idEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idEqualTo.html">commissioning_idEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idGreaterThan.html">commissioning_idGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idIsNull.html">commissioning_idIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idLessThan.html">commissioning_idLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idMatches.html">commissioning_idMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/commissioning_idStartsWith.html">commissioning_idStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_atBetween.html">created_atBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_atEqualTo.html">created_atEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_atGreaterThan.html">created_atGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_atLessThan.html">created_atLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idBetween.html">created_by_idBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idContains.html">created_by_idContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idEndsWith.html">created_by_idEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idEqualTo.html">created_by_idEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idGreaterThan.html">created_by_idGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idLessThan.html">created_by_idLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idMatches.html">created_by_idMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_idStartsWith.html">created_by_idStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameBetween.html">created_by_nameBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameContains.html">created_by_nameContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameEndsWith.html">created_by_nameEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameEqualTo.html">created_by_nameEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameGreaterThan.html">created_by_nameGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameLessThan.html">created_by_nameLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameMatches.html">created_by_nameMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/created_by_nameStartsWith.html">created_by_nameStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idBetween.html">customer_idBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idContains.html">customer_idContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idEndsWith.html">customer_idEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idEqualTo.html">customer_idEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idGreaterThan.html">customer_idGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idIsNull.html">customer_idIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idLessThan.html">customer_idLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idMatches.html">customer_idMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customer_idStartsWith.html">customer_idStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customerIdAutoIncrementBetween.html">customerIdAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customerIdAutoIncrementEqualTo.html">customerIdAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customerIdAutoIncrementGreaterThan.html">customerIdAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customerIdAutoIncrementIsNull.html">customerIdAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/customerIdAutoIncrementLessThan.html">customerIdAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdBetween.html">flowIdBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdContains.html">flowIdContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdEndsWith.html">flowIdEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdEqualTo.html">flowIdEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdGreaterThan.html">flowIdGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdLessThan.html">flowIdLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdMatches.html">flowIdMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/flowIdStartsWith.html">flowIdStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/idIsNull.html">idIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameBetween.html">project_nameBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameContains.html">project_nameContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameEndsWith.html">project_nameEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameEqualTo.html">project_nameEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameGreaterThan.html">project_nameGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameIsNull.html">project_nameIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameLessThan.html">project_nameLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameMatches.html">project_nameMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/project_nameStartsWith.html">project_nameStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyBetween.html">propertiesIdsAnyBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyContains.html">propertiesIdsAnyContains</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyEndsWith.html">propertiesIdsAnyEndsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyEqualTo.html">propertiesIdsAnyEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyGreaterThan.html">propertiesIdsAnyGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyLessThan.html">propertiesIdsAnyLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyMatches.html">propertiesIdsAnyMatches</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/propertiesIdsAnyStartsWith.html">propertiesIdsAnyStartsWith</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/send_timeBetween.html">send_timeBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/send_timeEqualTo.html">send_timeEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/send_timeGreaterThan.html">send_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/send_timeIsNull.html">send_timeIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/send_timeLessThan.html">send_timeLessThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/updated_atBetween.html">updated_atBetween</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/updated_atEqualTo.html">updated_atEqualTo</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/updated_atGreaterThan.html">updated_atGreaterThan</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/updated_atIsNull.html">updated_atIsNull</a></li>
+    <li><a href="../../database_schema_commissioning/CommissioningQueryFilter/updated_atLessThan.html">updated_atLessThan</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

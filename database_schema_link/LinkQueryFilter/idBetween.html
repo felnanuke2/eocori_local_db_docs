@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the idBetween method from the LinkQueryFilter extension, for the Dart programming language.">
+  <title>idBetween method - LinkQueryFilter extension - link library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_link/database_schema_link-library.html">link</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter.html">LinkQueryFilter</a></li>
+    <li class="self-crumb">idBetween method</li>
+  </ol>
+  <div class="self-name">idBetween</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">idBetween</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_link/Link-class.html">Link</a></span>, <span class="type-parameter"><a href="../../database_schema_link/Link-class.html">Link</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">idBetween</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="idBetween-param-lower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">lower</span>, </span></li>
+<li><span class="parameter" id="idBetween-param-upper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">upper</span>, </span></li>
+<li><span class="parameter" id="idBetween-param-caseSensitive">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">caseSensitive</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="idBetween-param-includeLower"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeLower</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="idBetween-param-includeUpper"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includeUpper</span> = <span class="default-value">true</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Link, Link, QAfterFilterCondition&gt; idBetween(
+  String lower,
+  String upper, {
+  bool caseSensitive = true,
+  bool includeLower = true,
+  bool includeUpper = true,
+}) {
+  return addFilterConditionInternal(FilterCondition.between(
+    property: &#39;id&#39;,
+    lower: lower,
+    includeLower: includeLower,
+    upper: upper,
+    includeUpper: includeUpper,
+    caseSensitive: caseSensitive,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_link/database_schema_link-library.html">link</a></li>
+  <li><a href="../../database_schema_link/LinkQueryFilter.html">LinkQueryFilter</a></li>
+  <li class="self-crumb">idBetween method</li>
+</ol>
+
+
+    <h5>LinkQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_link/LinkQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idBetween.html">form_item_idBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idContains.html">form_item_idContains</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idEndsWith.html">form_item_idEndsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idEqualTo.html">form_item_idEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idGreaterThan.html">form_item_idGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idLessThan.html">form_item_idLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idMatches.html">form_item_idMatches</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/form_item_idStartsWith.html">form_item_idStartsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/typeBetween.html">typeBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/typeEqualTo.html">typeEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/typeGreaterThan.html">typeGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/typeLessThan.html">typeLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueBetween.html">valueBetween</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueContains.html">valueContains</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueEndsWith.html">valueEndsWith</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueEqualTo.html">valueEqualTo</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueGreaterThan.html">valueGreaterThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueIsNull.html">valueIsNull</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueLessThan.html">valueLessThan</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueMatches.html">valueMatches</a></li>
+    <li><a href="../../database_schema_link/LinkQueryFilter/valueStartsWith.html">valueStartsWith</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

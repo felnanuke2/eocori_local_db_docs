@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the idIsNull method from the PropertyQueryFilter extension, for the Dart programming language.">
+  <title>idIsNull method - PropertyQueryFilter extension - property library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">local_db</a></li>
+    <li><a href="../../database_schema_property/database_schema_property-library.html">property</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter.html">PropertyQueryFilter</a></li>
+    <li class="self-crumb">idIsNull method</li>
+  </ol>
+  <div class="self-name">idIsNull</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">idIsNull</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://pub.dev/documentation/isar/2.2.1/isar/QueryBuilder-class.html">QueryBuilder</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../database_schema_property/Property-class.html">Property</a></span>, <span class="type-parameter"><a href="../../database_schema_property/Property-class.html">Property</a></span>, <span class="type-parameter">QAfterFilterCondition</span>&gt;</span></span>
+<span class="name ">idIsNull</span>(<wbr>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">QueryBuilder&lt;Property, Property, QAfterFilterCondition&gt; idIsNull() {
+  return addFilterConditionInternal(FilterCondition(
+    type: ConditionType.isNull,
+    property: &#39;id&#39;,
+    value: null,
+  ));
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">local_db</a></li>
+  <li><a href="../../database_schema_property/database_schema_property-library.html">property</a></li>
+  <li><a href="../../database_schema_property/PropertyQueryFilter.html">PropertyQueryFilter</a></li>
+  <li class="self-crumb">idIsNull method</li>
+</ol>
+
+
+    <h5>PropertyQueryFilter extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../database_schema_property/PropertyQueryFilter.html#instance-methods">Methods</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/creation_timeBetween.html">creation_timeBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/creation_timeEqualTo.html">creation_timeEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/creation_timeGreaterThan.html">creation_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/creation_timeIsNull.html">creation_timeIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/creation_timeLessThan.html">creation_timeLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionBetween.html">descriptionBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionContains.html">descriptionContains</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionEndsWith.html">descriptionEndsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionEqualTo.html">descriptionEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionGreaterThan.html">descriptionGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionIsNull.html">descriptionIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionLessThan.html">descriptionLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionMatches.html">descriptionMatches</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/descriptionStartsWith.html">descriptionStartsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/hashCodeBetween.html">hashCodeBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/hashCodeEqualTo.html">hashCodeEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/hashCodeGreaterThan.html">hashCodeGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/hashCodeLessThan.html">hashCodeLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idAutoIncrementBetween.html">idAutoIncrementBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idAutoIncrementEqualTo.html">idAutoIncrementEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idAutoIncrementGreaterThan.html">idAutoIncrementGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idAutoIncrementIsNull.html">idAutoIncrementIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idAutoIncrementLessThan.html">idAutoIncrementLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idBetween.html">idBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idContains.html">idContains</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idEndsWith.html">idEndsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idEqualTo.html">idEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idGreaterThan.html">idGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idIsNull.html">idIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idLessThan.html">idLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idMatches.html">idMatches</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/idStartsWith.html">idStartsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameBetween.html">nameBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameContains.html">nameContains</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameEndsWith.html">nameEndsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameEqualTo.html">nameEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameGreaterThan.html">nameGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameIsNull.html">nameIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameLessThan.html">nameLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameMatches.html">nameMatches</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/nameStartsWith.html">nameStartsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/statusBetween.html">statusBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/statusEqualTo.html">statusEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/statusGreaterThan.html">statusGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/statusIsNull.html">statusIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/statusLessThan.html">statusLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/stringifyEqualTo.html">stringifyEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/stringifyIsNull.html">stringifyIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idBetween.html">type_idBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idContains.html">type_idContains</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idEndsWith.html">type_idEndsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idEqualTo.html">type_idEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idGreaterThan.html">type_idGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idIsNull.html">type_idIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idLessThan.html">type_idLessThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idMatches.html">type_idMatches</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/type_idStartsWith.html">type_idStartsWith</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/update_timeBetween.html">update_timeBetween</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/update_timeEqualTo.html">update_timeEqualTo</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/update_timeGreaterThan.html">update_timeGreaterThan</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/update_timeIsNull.html">update_timeIsNull</a></li>
+    <li><a href="../../database_schema_property/PropertyQueryFilter/update_timeLessThan.html">update_timeLessThan</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

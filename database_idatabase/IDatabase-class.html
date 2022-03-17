@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the IDatabase class from the idatabase library, for the Dart programming language.">
+  <title>IDatabase class - idatabase library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">local_db</a></li>
+    <li><a href="../database_idatabase/database_idatabase-library.html">idatabase</a></li>
+    <li class="self-crumb">IDatabase abstract class</li>
+  </ol>
+  <div class="self-name">IDatabase</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">IDatabase</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../database_isar_database/IsarDatabase-class.html">IsarDatabase</a></li>
+        </ul></dd>
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="IDatabase" class="callable">
+          <span class="name"><a href="../database_idatabase/IDatabase/IDatabase.html">IDatabase</a></span><span class="signature">(<span class="parameter" id="-param-answers">{<span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_answer/Answer-class.html">Answer</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">answers</span>, </span><span class="parameter" id="-param-attachement"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_attachment/Attachment-class.html">Attachment</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">attachement</span>, </span><span class="parameter" id="-param-automaticHints"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_automatic_hints/AutomaticHint-class.html">AutomaticHint</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">automaticHints</span>, </span><span class="parameter" id="-param-fieldOptions"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_field_option/FieldOption-class.html">FieldOption</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">fieldOptions</span>, </span><span class="parameter" id="-param-fields"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_field/Field-class.html">Field</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">fields</span>, </span><span class="parameter" id="-param-flows"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_flow/Flow-class.html">Flow</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">flows</span>, </span><span class="parameter" id="-param-commissioning"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_commissioning/Commissioning-class.html">Commissioning</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">commissioning</span>, </span><span class="parameter" id="-param-entries"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form_entry/FormEntry-class.html">FormEntry</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">entries</span>, </span><span class="parameter" id="-param-groups"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form_group/FormGroup-class.html">FormGroup</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">groups</span>, </span><span class="parameter" id="-param-forms"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form/FormCollection-class.html">FormCollection</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">forms</span>, </span><span class="parameter" id="-param-links"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_link/Link-class.html">Link</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">links</span>, </span><span class="parameter" id="-param-propertyTypes"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_property_type/PropertyType-class.html">PropertyType</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">propertyTypes</span>, </span><span class="parameter" id="-param-properties"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_property/Property-class.html">Property</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">properties</span>, </span><span class="parameter" id="-param-accessTokens"><span>required</span> <span class="type-annotation">IAccountCacheServices</span> <span class="parameter-name">accessTokens</span>, </span><span class="parameter" id="-param-customers"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_customer/Customer-class.html">Customer</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">customers</span>, </span><span class="parameter" id="-param-mobileAccounts"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">mobileAccounts</span>, </span><span class="parameter" id="-param-groupEntries"><span>required</span> <span class="type-annotation"><a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_group_entry/GroupEntry-class.html">GroupEntry</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">groupEntries</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="accessTokens" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/accessTokens.html">accessTokens</a></span>
+  <span class="signature">&#8594; IAccountCacheServices</span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="answers" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/answers.html">answers</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_answer/Answer-class.html">Answer</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="attachement" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/attachement.html">attachement</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_attachment/Attachment-class.html">Attachment</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="automaticHints" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/automaticHints.html">automaticHints</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_automatic_hints/AutomaticHint-class.html">AutomaticHint</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="commissioning" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/commissioning.html">commissioning</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_commissioning/Commissioning-class.html">Commissioning</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="currentWorkDirectory" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/currentWorkDirectory.html">currentWorkDirectory</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-io/Directory-class.html">Directory</a></span> 
+
+</dt>
+<dd>
+  the current directory where database is located <a href="../database_idatabase/IDatabase/currentWorkDirectory.html">[...]</a>
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="customers" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/customers.html">customers</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_customer/Customer-class.html">Customer</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="entries" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/entries.html">entries</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form_entry/FormEntry-class.html">FormEntry</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="fieldOptions" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/fieldOptions.html">fieldOptions</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_field_option/FieldOption-class.html">FieldOption</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="fields" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/fields.html">fields</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_field/Field-class.html">Field</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="flows" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/flows.html">flows</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_flow/Flow-class.html">Flow</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="forms" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/forms.html">forms</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form/FormCollection-class.html">FormCollection</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="groupEntries" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/groupEntries.html">groupEntries</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_group_entry/GroupEntry-class.html">GroupEntry</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="groups" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/groups.html">groups</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_form_group/FormGroup-class.html">FormGroup</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="links" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/links.html">links</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_link/Link-class.html">Link</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="mobileAccounts" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/mobileAccounts.html">mobileAccounts</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_mobile_account/MobileAccount-class.html">MobileAccount</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="properties" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/properties.html">properties</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_property/Property-class.html">Property</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="propertyTypes" class="property">
+  <span class="name"><a href="../database_idatabase/IDatabase/propertyTypes.html">propertyTypes</a></span>
+  <span class="signature">&#8594; <a href="../database_handlers_icache_handler/ICacheHandler-class.html">ICacheHandler</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../database_schema_property_type/PropertyType-class.html">PropertyType</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="clean" class="callable">
+  <span class="name"><a href="../database_idatabase/IDatabase/clean.html">clean</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  This method clean database <a href="../database_idatabase/IDatabase/clean.html">[...]</a>
+  
+
+</dd>
+
+        <dt id="init" class="callable">
+  <span class="name"><a href="../database_idatabase/IDatabase/init.html">init</a></span><span class="signature">(<wbr><span class="parameter" id="init-param-dbPath">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">dbPath</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  initialize all database dependencies
+<code>dbPath</code> is optional but is required when you open database from  <a href="https://api.flutter.dev/flutter/dart-isolate/Isolate-class.html">Isolate</a> 
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">local_db</a></li>
+  <li><a href="../database_idatabase/database_idatabase-library.html">idatabase</a></li>
+  <li class="self-crumb">IDatabase abstract class</li>
+</ol>
+
+
+    <h5>idatabase library</h5>
+    <ol>
+  <li class="section-title"><a href="../database_idatabase/database_idatabase-library.html#classes">Classes</a></li>
+  <li><a href="../database_idatabase/IDatabase-class.html">IDatabase</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../database_idatabase/IDatabase-class.html#constructors">Constructors</a></li>
+    <li><a href="../database_idatabase/IDatabase/IDatabase.html">IDatabase</a></li>
+
+
+    <li class="section-title">
+      <a href="../database_idatabase/IDatabase-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../database_idatabase/IDatabase/accessTokens.html">accessTokens</a></li>
+    <li><a href="../database_idatabase/IDatabase/answers.html">answers</a></li>
+    <li><a href="../database_idatabase/IDatabase/attachement.html">attachement</a></li>
+    <li><a href="../database_idatabase/IDatabase/automaticHints.html">automaticHints</a></li>
+    <li><a href="../database_idatabase/IDatabase/commissioning.html">commissioning</a></li>
+    <li><a href="../database_idatabase/IDatabase/currentWorkDirectory.html">currentWorkDirectory</a></li>
+    <li><a href="../database_idatabase/IDatabase/customers.html">customers</a></li>
+    <li><a href="../database_idatabase/IDatabase/entries.html">entries</a></li>
+    <li><a href="../database_idatabase/IDatabase/fieldOptions.html">fieldOptions</a></li>
+    <li><a href="../database_idatabase/IDatabase/fields.html">fields</a></li>
+    <li><a href="../database_idatabase/IDatabase/flows.html">flows</a></li>
+    <li><a href="../database_idatabase/IDatabase/forms.html">forms</a></li>
+    <li><a href="../database_idatabase/IDatabase/groupEntries.html">groupEntries</a></li>
+    <li><a href="../database_idatabase/IDatabase/groups.html">groups</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../database_idatabase/IDatabase/links.html">links</a></li>
+    <li><a href="../database_idatabase/IDatabase/mobileAccounts.html">mobileAccounts</a></li>
+    <li><a href="../database_idatabase/IDatabase/properties.html">properties</a></li>
+    <li><a href="../database_idatabase/IDatabase/propertyTypes.html">propertyTypes</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../database_idatabase/IDatabase-class.html#instance-methods">Methods</a></li>
+    <li><a href="../database_idatabase/IDatabase/clean.html">clean</a></li>
+    <li><a href="../database_idatabase/IDatabase/init.html">init</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../database_idatabase/IDatabase-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    local_db
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
